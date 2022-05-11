@@ -112,6 +112,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             itemScore += 1
             itemScoreLabelNode.text = "Item:\(itemScore)"
             contact.bodyB.node?.removeFromParent()
+            
             self.run(soundAction)
         } else {
             //壁か地面と衝突した
